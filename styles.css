@@ -1,0 +1,88 @@
+* {margin: 0; padding: 0;}
+
+body {
+    height: 100vh;
+    
+}
+
+.topo {
+    background-color: rgb(241, 72, 72);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(241, 72, 72);
+}
+
+.home {
+    margin: 15px;
+}
+
+.produtos {
+    margin: 15px;
+}
+.contato {
+    margin: 15px;
+}
+
+.slider {
+    display: block;
+    height: 300px;
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 200px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: rgb(247, 69, 4);
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 110px;
+}
+
+.slider li:nth-child(2) label {
+    left: 140px;
+}
+
+.slider li:nth-child(3) label {
+    left: 170px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
